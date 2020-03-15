@@ -1,3 +1,10 @@
+# Michigan Benefits - Experimental Fork for Reuse in Other States
+
+This is an experimental fork of the CfA/IBI Michigan Benefits prototype to test
+reuse (specifically for a user-friendly SNAP and/or Medicaid application) in other state contexts.
+
+The contents of the original README are below.
+
 # Michigan Benefits
 
 Code repository for MichiganBenefits.org, a multi-benefit assistance application from
