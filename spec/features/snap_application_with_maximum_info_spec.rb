@@ -5,7 +5,7 @@ feature "SNAP application with maximum info" do
 
   scenario "successfully submits application", :js, :single_app_flow do
     visit root_path
-    within(".slab--hero") { proceed_with "Apply for FAP" }
+    within(".slab--hero") { proceed_with "Apply for SNAP" }
 
     on_page "Introduction" do
       fill_in_name_and_birthday

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe Integrated::DeclineHealthcareController do
   describe "#skip?" do
-    context "when FAP only" do
+    context "when SNAP only" do
       it "returns true" do
         application = create(:common_application,
                              navigator: create(:application_navigator,
@@ -14,7 +14,7 @@ RSpec.describe Integrated::DeclineHealthcareController do
       end
     end
 
-    context "when FAP and MA" do
+    context "when SNAP and MA" do
       context "when anyone applying for healthcare" do
         it "returns true" do
           application = create(:common_application,

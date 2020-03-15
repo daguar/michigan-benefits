@@ -12,7 +12,7 @@ module Summarizer
     def daily_summary
       readable_date = @date.strftime("%a, %b %d")
       "On #{readable_date}, we processed #{integrated_applications.count} #{application_word}: "\
-      "#{integrated_applications.applying_for_food_only.count} FAP-only, " \
+      "#{integrated_applications.applying_for_food_only.count} SNAP-only, " \
       "#{integrated_applications.applying_for_healthcare_only.count} Medicaid-only, " \
       "and #{integrated_applications.applying_for_food_and_healthcare.count} for both programs."
     end

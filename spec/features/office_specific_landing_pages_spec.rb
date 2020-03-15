@@ -1,10 +1,10 @@
 require "rails_helper"
 
 RSpec.feature "Office-specific landing pages" do
-  context "applying for FAP", :single_app_flow do
+  context "applying for SNAP", :single_app_flow do
     scenario "clio road" do
       visit "/clio"
-      click_on "Apply for FAP"
+      click_on "Apply for SNAP"
 
       expect(current_path).to eq "/steps/introduce-yourself"
       expect(find("#step_office_page", visible: false).value).to eq("clio")
@@ -12,7 +12,7 @@ RSpec.feature "Office-specific landing pages" do
 
     scenario "union street" do
       visit "/union"
-      click_on "Apply for FAP"
+      click_on "Apply for SNAP"
 
       expect(current_path).to eq "/steps/introduce-yourself"
       expect(find("#step_office_page", visible: false).value).to eq("union")
@@ -20,7 +20,7 @@ RSpec.feature "Office-specific landing pages" do
 
     scenario "regular home page" do
       visit root_path
-      within(".slab--hero") { click_on "Apply for FAP" }
+      within(".slab--hero") { click_on "Apply for SNAP" }
 
       expect(current_path).to eq "/steps/introduce-yourself"
       expect(find("#step_office_page", visible: false).value).to be_nil

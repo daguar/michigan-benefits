@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Submit snap application" do
   scenario "change office location", :a11y, :single_app_flow do
     visit root_path
-    within(".slab--hero") { proceed_with "Apply for FAP" }
+    within(".slab--hero") { proceed_with "Apply for SNAP" }
 
     on_page "Introduction" do
       expect(page).to have_content("Food Assistance Application")

@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Submit application with minimal information" do
   scenario "completes successfully", :js, :single_app_flow do
     visit root_path
-    within(".slab--hero") { proceed_with "Apply for FAP" }
+    within(".slab--hero") { proceed_with "Apply for SNAP" }
 
     on_page "Introduction" do
       expect(page).to have_content("Food Assistance Application")

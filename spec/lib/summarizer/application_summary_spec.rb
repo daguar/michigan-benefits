@@ -20,7 +20,7 @@ RSpec.describe Summarizer::ApplicationSummary do
       ).daily_summary
 
       expect(text).to include(
-        "On Fri, Dec 01, we processed 4 applications: 1 FAP-only, 1 Medicaid-only, and 2 for both programs",
+        "On Fri, Dec 01, we processed 4 applications: 1 SNAP-only, 1 Medicaid-only, and 2 for both programs",
       )
     end
 

@@ -47,7 +47,7 @@ RSpec.describe ApplicationMailer do
         expect(from_header).to eq %("Michigan Benefits" <hello@example.com>)
         expect(email.from).to eq(["hello@example.com"])
         expect(email.to).to eq(["user@example.com"])
-        expect(email.subject).to eq("Your FAP + Medicaid application")
+        expect(email.subject).to eq("Your SNAP + Medicaid application")
       end
     end
 

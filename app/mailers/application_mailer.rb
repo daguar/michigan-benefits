@@ -15,7 +15,7 @@ class ApplicationMailer < ActionMailer::Base
     mail(
       from: %("Michigan Benefits" <hello@#{ENV['EMAIL_DOMAIN']}>),
       to: recipient_email,
-      subject: "Your FAP + Medicaid application",
+      subject: "Your SNAP + Medicaid application",
     )
   end
 

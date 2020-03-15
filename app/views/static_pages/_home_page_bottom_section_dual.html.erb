@@ -2,7 +2,7 @@
   <div class="grid">
     <div class="grid__item width-seven-twelfths">
       <p>
-        FAP is Michigan’s food stamps (SNAP) program. Most households receive
+        SNAP is Michigan’s food assistance program (food stamps). Most households receive
         between $20 and $200 in food assistance each month.
       </p>
       <p>
@@ -31,11 +31,11 @@
       </p>
       <% if GateKeeper.feature_enabled?("SINGLE_PROGRAM_APPLICATIONS") %>
           <%= link_to step_path(StepNavigation.first, office_page: office_page), class: "button button--cta button--fully-width" do %>
-              Apply for FAP
+              Apply for SNAP
           <% end %>
       <% else %>
           <%= link_to section_path(FormNavigation.first, office_page: office_page, applying_for_food: 1), class: "button button--cta button--fully-width" do %>
-              Apply for FAP
+              Apply for SNAP
           <% end %>
       <% end %>
     </div>

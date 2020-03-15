@@ -9,7 +9,7 @@ module Integrated
 
         logger.info(
           "Emailed to #{integrated_application.email} "\
-          "for FAP + Medicaid Client #{integrated_application.id}",
+          "for SNAP + Medicaid Client #{integrated_application.id}",
         )
       end
     end

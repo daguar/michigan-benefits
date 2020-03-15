@@ -10,7 +10,7 @@
         Get the support your family needs
       </h1>
       <p class="hero--subheader">
-        Complete applications for food stamps (FAP) and Medicaid here, and get interviewed
+        Complete applications for food stamps (SNAP) and Medicaid here, and get interviewed
         at the Clio Road office within 30 minutes.
       </p>
     </div>
@@ -18,7 +18,7 @@
     <% if GateKeeper.feature_enabled?("SINGLE_PROGRAM_APPLICATIONS") %>
       <div class="hero--cta-options grid__item">
         <%= link_to step_path(StepNavigation.first, office_page: "clio") do %>
-            <p class="button button--cta button--fully-width">Apply for FAP</p>
+            <p class="button button--cta button--fully-width">Apply for SNAP</p>
             <p class="text--help">Food Stamps</p>
         <% end %>
 
